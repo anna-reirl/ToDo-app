@@ -9,35 +9,31 @@
 </head>
 <body>
 
-
 	<div class="container">
 		<div class="display-4 mb-2">ToDo приложение</div>
-		<div class="h4 mb-5">список задач на сегодня</div>
-
+		<div class="h4 mb-2 subtitle">список задач на сегодня</div>
+    <div class="h6 mb-4">всего задач: <span class="counter"></span></div>
+			<!-- Form add new task -->
+			<div class="card bg-light" >
+				<div class="card-header">Добавить новую задачу</div>
+				<div class="card-body">
+				<form id="new-task-form">
+					<div class="form-group">
+						<input type="text" class="form-control" id="add-new-task" placeholder="Текст задачи" required>
+						<small id="emailHelp" class="form-text text-muted">Что делаем, сколько времени тратим, какой результат получаем.</small>
+					</div>		
+					<button type="submit" class="btn btn-primary  btn-lg active">Добавить</button>
+				</form>
+				</div>
+				</div>
+			<!-- //Form add new task -->
 
 		<!-- List of tasks -->
-		<div class="card mb-4">
-			<ul class="list-group list-group-flush" id="taskList">
+		<div class="card mb-4 tasks-container">
+			<ul class="list-group list-group-flush" id="tasks-list">		
 			</ul>
 		</div>
 		<!-- //List of tasks -->
-
-		<!-- Form add new task -->
-		<div class="card bg-light" >
-			<div class="card-header">Добавить новую задачу</div>
-			<div class="card-body">
-		<form id="newTaskForm">
-			<div class="form-group">
-				<input type="text" class="form-control" id="addNewTask" placeholder="Текст задачи" required>
-				<small id="emailHelp" class="form-text text-muted">Что делаем, сколько времени тратим, какой результат получаем.</small>
-			</div>
-			
-			<button type="submit" class="btn btn-primary  btn-lg active">Добавить</button>
-		</form>
-			</div>
-			</div>
-		<!-- //Form add new task -->
-
 
 	</div>
 
